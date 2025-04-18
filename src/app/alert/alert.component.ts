@@ -9,7 +9,6 @@ import { AlertService } from './alert.service';
 export class AlertComponent implements OnInit {
   message: string | null = null;
   type: 'success' | 'error' | 'info' = 'info';
-  timeoutId: any;
 
   constructor(private alertService: AlertService) {}
 
@@ -18,20 +17,11 @@ export class AlertComponent implements OnInit {
       this.message = alert.message;
       this.type = alert.type;
 
-      if (this.timeoutId) {
-        clearTimeout(this.timeoutId);
-      }
-
-      this.timeoutId = setTimeout(() => {
+      setTimeout(() => {
         this.message = null;
       }, 2000);
     });
   }
 
-  dismiss(): void {
-    this.message = null;
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
-    }
   }
-}
+
