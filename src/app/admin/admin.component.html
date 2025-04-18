@@ -1,22 +1,27 @@
 <div class="admin-container">
-    <h2 class="admin-title">Admin Panel</h2>
-  
-    <input
-      type="text"
-      placeholder="Search email"
-      [(ngModel)]="searchQuery"
-      (input)="searchUsers()"
-      class="search-bar"
-    />
-  
-    <div class="user-card-container">
+  <h2 class="admin-title">Admin Panel</h2>
+
+  <input
+    type="text"
+    placeholder="Search email"
+    [(ngModel)]="searchQuery"
+    (input)="searchUsers()"
+    class="search-bar"
+  />
+
+  <div class="user-card-container">
+    <div *ngIf="filteredUsers.length > 0; else noUsersTemplate">
       <div *ngFor="let user of filteredUsers" class="user-card">
         <h3>{{ user.email }}</h3>
-  
         <button (click)="deleteUser(user.email)" class="delete-btn">
           🗑 Delete User
         </button>
       </div>
     </div>
+
+    <ng-template #noUsersTemplate>
+      <p>No users found</p>
+    </ng-template>
   </div>
+</div>
   
