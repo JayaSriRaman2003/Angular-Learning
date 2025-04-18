@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AlertService } from './alert.service';
 
 @Component({
@@ -6,9 +6,10 @@ import { AlertService } from './alert.service';
   templateUrl: './alert.component.html',
   styleUrls: ['./alert.component.css']
 })
-export class AlertComponent {
+export class AlertComponent implements OnInit {
   message: string | null = null;
   type: 'success' | 'error' | 'info' = 'info';
+  timeoutId: any;
 
   constructor(private alertService: AlertService) {}
 
@@ -17,10 +18,29 @@ export class AlertComponent {
       this.message = alert.message;
       this.type = alert.type;
 
-      // Optionally, automatically hide after 3 seconds
-      setTimeout(() => {
+      if (this.timeoutId) {
+        clearTimeout(this.timeoutId);
+      }
+
+      this.timeoutId = setTimeout(() => {
         this.message = null;
       }, 2000);
     });
+  }
+
+  dismiss(): void {
+    this.message = null;
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId);
+    }
+  }
+
+  getIcon(type: string): string {
+    switch(type) {
+      case 'success': return '✅';
+      case 'error': return '❌';
+      case 'info': return 'ℹ️';
+      default: return '';
+    }
   }
 }

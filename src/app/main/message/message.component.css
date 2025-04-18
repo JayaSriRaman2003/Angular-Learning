@@ -74,6 +74,11 @@
     border: 1px solid #ccc;
     border-radius: 20px;
     font-size: 15px;
+    outline: none;
+  }
+
+  .chat-input input:focus{
+    border: 2px solid #1da1f2;
   }
   
   .chat-input button {

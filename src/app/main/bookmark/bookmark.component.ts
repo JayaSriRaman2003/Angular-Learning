@@ -10,17 +10,17 @@ export class BookmarkComponent {
     {
       title: 'Angular Tips & Tricks',
       imageUrl: 'https://angular.io/assets/images/logos/angular/angular.svg',
-      description: 'lorem ipsum.'
+      description: 'This is angular tips and tricks'
     },
     {
       title: 'RxJS Cheat Sheet',
       imageUrl: 'https://rxjs.dev/generated/images/marketing/home/Rx_Logo-512-512.png',
-      description: 'lorem ipsum.'
+      description: 'RxJS Cheet Sheet for free'
     },
     {
       title: 'State Management Guide',
       imageUrl: 'https://ngrx.io/assets/images/badge.svg',
-      description: 'lorem ipsum.'
+      description: 'State management full course'
     }
   ];
 }
