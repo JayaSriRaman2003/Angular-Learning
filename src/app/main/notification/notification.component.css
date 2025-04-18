@@ -1,4 +1,3 @@
-/* Container: Two Columns */
 .tweet-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,7 +9,6 @@
     border-radius: 16px;
   }
   
-  /* Notification Card Style */
   .tweet-card {
     background-color: #ffffff;
     padding: 25px;
@@ -49,15 +47,3 @@
     line-height: 1.5;
     text-align: center;
   }
-  
-  /* Responsive: Stack on small screens */
-  @media (max-width: 768px) {
-    .tweet-container {
-      grid-template-columns: 1fr;
-    }
-  
-    .tweet-card {
-      margin-bottom: 20px;
-    }
-  }
-  

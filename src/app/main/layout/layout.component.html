@@ -7,35 +7,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-<!-- layout.component.html -->
+
 <div class="flex-stuffs">
-    <!-- LEFT NAVIGATION - static -->
+    
     <aside class="side left-side">
       <div>
         <i class="fa-brands fa-twitter twt-icon"></i>
         <div class="icons">
-          <div class="inner-icons" routerLink="main/home" routerLinkActive="active">
+          <div class="inner-icons" routerLink="/home" >
             <i class="fa-solid fa-house"></i>
             <span>Home</span>
           </div>
-          <div class="inner-icons" routerLink="/explore" routerLinkActive="active">
-            <i class="fa-solid fa-hashtag"></i>
-            <span>Explore</span>
-          </div>
-          <div class="inner-icons" routerLink="main/message" routerLinkActive="active">
+          <div class="inner-icons" routerLink="main/message" >
             <i class="fa-solid fa-message"></i>
             <span>Message</span>
           </div>
           
-          <div class="inner-icons" routerLink="/notification" routerLinkActive="active">
+          <div class="inner-icons" routerLink="/notification">
             <i class="fa-solid fa-bell"></i>
             <span>Notification</span>
           </div>
-          <div class="inner-icons" routerLink="main/bookmark" routerLinkActive="active">
+          <div class="inner-icons" routerLink="main/bookmark" >
             <i class="fa-solid fa-bookmark"></i>
             <span>Bookmark</span>
           </div>
-          <div class="inner-icons" routerLink="/profile" routerLinkActive="active">
+          <div class="inner-icons" routerLink="/profile" >
             <i class="fa-solid fa-user"></i>
             <span>Profile</span>
           </div>
@@ -53,7 +49,7 @@
       </div>
     </aside>
   
-    <!-- RIGHT CONTENT: dynamic content from child routes -->
+  
     <div class="right-sections">
       <router-outlet></router-outlet>
     </div>

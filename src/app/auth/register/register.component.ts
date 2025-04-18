@@ -11,7 +11,6 @@ import { AlertService } from 'src/app/alert/alert.service';
 })
 export class RegisterComponent {
   user: User = {
-    // username: '',
     email: '',
     password: '',
     confirmPassword : ''

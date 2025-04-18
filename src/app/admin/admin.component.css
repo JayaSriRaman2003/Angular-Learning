@@ -24,7 +24,7 @@
   
   .user-card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
   
@@ -53,16 +53,17 @@
   .delete-btn {
     margin-top: 12px;
     padding: 10px 16px;
-    background-color: #ff4d4f;
+    background-color: #1da1f2;
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, translate 0.3s ease;
   }
   
   .delete-btn:hover {
     background-color: #d9363e;
+    transform: scale(1.1) translate(5px, -3px);
   }
   

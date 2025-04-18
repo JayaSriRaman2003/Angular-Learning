@@ -25,7 +25,6 @@
     margin-bottom: 20px;
   }
   
-  /* Individual Message Styles */
   .chat-message {
     display: flex;
     max-width: 80%;
@@ -61,7 +60,7 @@
     margin-top: 5px;
   }
   
-  /* Chat Input */
+
   .chat-input {
     display: flex;
     gap: 10px;
@@ -88,22 +87,7 @@
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition:  0.3s ease;
   }
   
-  .chat-input button:hover {
-    background-color: #0d8ddb;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .chat-container {
-      width: 100%;
-      padding: 15px;
-    }
-  
-    .chat-message {
-      max-width: 100%;
-    }
-  }
-  
+

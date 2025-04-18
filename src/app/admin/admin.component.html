@@ -3,7 +3,7 @@
   
     <input
       type="text"
-      placeholder="Search by email"
+      placeholder="Search email"
       [(ngModel)]="searchQuery"
       (input)="searchUsers()"
       class="search-bar"
@@ -12,11 +12,9 @@
     <div class="user-card-container">
       <div *ngFor="let user of filteredUsers" class="user-card">
         <h3>{{ user.email }}</h3>
-        <p>Password: {{ user.password }}</p>
-        <p>Confirm Password: {{ user.confirmPassword }}</p>
   
         <button (click)="deleteUser(user.email)" class="delete-btn">
-          Delete User
+          🗑 Delete User
         </button>
       </div>
     </div>

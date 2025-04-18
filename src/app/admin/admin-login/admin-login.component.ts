@@ -10,7 +10,6 @@ import { AlertService } from 'src/app/alert/alert.service';
 export class AdminLoginComponent {
   email = '';
   password = '';
-  errorMessage = '';
 
   constructor(private router: Router, private alertService  : AlertService) {}
 
@@ -20,7 +19,6 @@ export class AdminLoginComponent {
     const adminPassword = 'admin123';
 
     if (this.email === adminEmail && this.password === adminPassword) {
-      localStorage.setItem('isAdmin', 'true');
       this.router.navigate(['/admin-page']);
     } else {
       this.alertService.showAlert('Enter All The Fields', 'error')
