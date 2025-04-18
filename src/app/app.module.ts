@@ -7,6 +7,7 @@ import { AlertComponent } from './alert/alert.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthModule } from './auth/auth.module';
 import { MainModule } from './main/main.module';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MainModule } from './main/main.module';
     FormsModule,
     ReactiveFormsModule,
     AuthModule,
-    MainModule
+    MainModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
