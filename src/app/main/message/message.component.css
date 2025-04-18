@@ -26,21 +26,21 @@
   }
   
 
-  .chat-message {
+  .chat-msg {
     display: flex;
     max-width: 80%;
   }
   
-  .chat-message.incoming {
+  .chat-msg.incoming {
     justify-content: flex-start;
   }
   
-  .chat-message.outgoing {
+  .chat-msg.outgoing {
     justify-content: flex-end;
     align-self: flex-end;
   }
   
-  .bubble {
+  .each-msg    {
     background-color: #e1effe;
     padding: 12px 16px;
     border-radius: 20px;
@@ -49,12 +49,16 @@
     max-width: 100%;
   }
   
-  .outgoing .bubble {
+  .outgoing .each-msg {
     background-color: #1da1f2;
     color: white;
   }
+
+  .outgoing .each-msg .time{
+    color: #ffffff;
+  }
   
-  .bubble .time {
+  .each-msg .time {
     display: block;
     font-size: 12px;
     color: #666;
@@ -62,13 +66,13 @@
   }
   
 
-  .chat-input {
+  .user-input {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
   }
   
-  .chat-input input {
+  .user-input input {
     flex-grow: 1;
     padding: 12px;
     border: 1px solid #ccc;
@@ -77,12 +81,12 @@
     outline: none;
   }
 
-  .chat-input input:focus{
+  .user-input input:focus{
     border: 2px solid #1da1f2;
   }
   
-  .chat-input button {
-    padding: 10px 20px;
+  .user-input button {
+    padding: 14px 30px;
     background-color: #1da1f2;
     color: white;
     border: none;

@@ -8,8 +8,8 @@
 
 </head>
 <body>
-  <div class="tweet-container">
-    <div class="tweet-card" *ngFor="let bookmark of bookmarks">
+  <div class="main-container">
+    <div class="indi-card" *ngFor="let bookmark of bookmarks">
       <h3>{{ bookmark.title }}</h3>
       <img [src]="bookmark.imageUrl" alt="bookmark preview" />
       <i class="fa-solid fa-bookmark" style="color: grey;"></i>

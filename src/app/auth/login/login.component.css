@@ -28,7 +28,7 @@ body {
   }
 
 
-  .common {
+  .button-1 {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
@@ -74,7 +74,7 @@ body {
   }
   
 
-  .button-1 {
+  .button-2 {
     width: 100%;
     padding: 12px;
     background-color: #1da1f2;
@@ -88,11 +88,11 @@ body {
     transition: background-color 0.2s;
   }
   
-  .button-1:hover {
+  .button-2:hover {
     background-color: #0d8ddf;
   }
   
-  .button-2 {
+  .button-3 {
     width: 100%;
     padding: 12px;
     background-color: white;
@@ -105,7 +105,7 @@ body {
     transition: background-color 0.2s;
   }
   
-  .button-2:hover {
+  .button-3:hover {
     background-color: #f0f8ff;
   }
 

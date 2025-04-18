@@ -1,4 +1,4 @@
-.admin-login-container {
+.main-container {
     max-width: 400px;
     margin: 100px auto;
     padding: 30px;
@@ -7,19 +7,19 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   }
   
-  .admin-login-container h2 {
+  .main-container h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #1da1f2;
   }
   
-  .login-form label {
+  .form label {
     display: block;
     margin-bottom: 6px;
     font-weight: 500;
   }
   
-  .login-form input {
+  .form input {
     width: 95%;
     padding: 10px;
     margin-bottom: 16px;
@@ -27,7 +27,7 @@
     border-radius: 8px;
   }
   
-  .login-form button {
+  .form button {
     width: 100%;
     padding: 12px;
     background-color: #1da1f2;

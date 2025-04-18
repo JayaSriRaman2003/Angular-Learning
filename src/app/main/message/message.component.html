@@ -1,25 +1,25 @@
-<div class="tweet-container chat-container">
+<div class="chat-container">
   <h2>Chat Room</h2>
 
   <div class="chat-box">
 
-    <div class="chat-message incoming">
-      <div class="bubble">
+    <div class="chat-msg incoming">
+      <div class="each-msg">
         <p>{{text1}}</p>
         <span class="time">10:15 AM</span>
       </div>
     </div>
 
 
-    <div class="chat-message outgoing">
-      <div class="bubble">
+    <div class="chat-msg outgoing">
+      <div class="each-msg">
         <p>{{text2}}</p>
         <span class="time">10:17 AM</span>
       </div>
     </div>
 
-    <div class="chat-message incoming">
-      <div class="bubble">
+    <div class="chat-msg incoming">
+      <div class="each-msg">
         <p>{{text3}}</p>
         <span class="time">10:18 AM</span>
       </div>
@@ -27,7 +27,7 @@
   </div>
 
 
-  <form [formGroup]="msgForm" (ngSubmit)="onSubmit()" class="chat-input">
+  <form [formGroup]="msgForm" (ngSubmit)="onSubmit()" class="user-input">
     <input type="text" formControlName="text" placeholder="Type your message..." />
     <button type="submit">Send</button>
   </form>

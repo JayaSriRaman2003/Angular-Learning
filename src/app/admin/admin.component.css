@@ -1,4 +1,4 @@
-.admin-container {
+.main-container {
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
@@ -50,7 +50,7 @@
     margin: 2px 0;
   }
   
-  .delete-btn {
+  .delete {
     margin-top: 12px;
     padding: 10px 16px;
     background-color: #1da1f2;
@@ -62,7 +62,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, translate 0.3s ease;
   }
   
-  .delete-btn:hover {
+  .delete:hover {
     background-color: #d9363e;
     transform: scale(1.1) translate(5px, -3px);
   }

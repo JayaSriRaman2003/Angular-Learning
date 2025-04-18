@@ -1,4 +1,4 @@
-.tweet-container {
+.tweet-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -59,7 +59,7 @@
 }
 
 
-.tweet-card {
+.post {
     background-color: #ffffff;
     padding: 25px;
     border-radius: 16px;
@@ -70,33 +70,21 @@
     justify-content: center;
 }
 
-.tweet-card h3 {
+.post h3 {
     font-size: 22px;
     color: #1da1f2;
     margin-bottom: 10px;
 }
 
-.tweet-card img {
+.post img {
     width: 100%;
     border-radius: 12px;
     margin-bottom: 15px;
     object-fit: cover;
 }
 
-.tweet-card p {
+.post p {
     font-size: 16px;
     color: #444;
     line-height: 1.5;
-}
-
-
-@media (max-width: 768px) {
-    .tweet-container {
-        grid-template-columns: 1fr;
-    }
-
-    .tweet-form,
-    .tweet-card {
-        margin-bottom: 20px;
-    }
 }

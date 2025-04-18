@@ -65,7 +65,7 @@ body {
   cursor: pointer;
 }
 
-.logout-btn {
+.logout {
   position: relative;
   left: 9px;
   padding: 8px 30px;
@@ -78,7 +78,7 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.logout-btn:hover {
+.logout:hover {
   transform: scale(1.15);
   cursor: pointer;
   box-shadow: -6px 6px 10px rgb(227, 227, 227);

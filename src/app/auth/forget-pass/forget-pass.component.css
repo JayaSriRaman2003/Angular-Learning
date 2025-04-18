@@ -27,7 +27,6 @@ body {
     margin-bottom: 20px;
   }
 
-
   .common {
   width: 100%;
   padding: 12px;
@@ -39,24 +38,6 @@ body {
   font-weight: bold;
   font-size: 14px;
 }
-
-.line {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 20px 0;
-    color: gray;
-    font-size: 14px;
-  }
-  
-  .line::before,
-  .line::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: #ccc;
-    margin: 0 10px;
-  }
   
   .user-data {
     width: 90%;
@@ -92,22 +73,6 @@ body {
     background-color: #0d8ddf;
   }
   
-  .button-2 {
-    width: 100%;
-    padding: 12px;
-    background-color: white;
-    color: #1da1f2;
-    border: 1px solid #1da1f2;
-    border-radius: 30px;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .button-2:hover {
-    background-color: #f0f8ff;
-  }
 
   .txt {
     font-size: 14px;
@@ -125,5 +90,3 @@ body {
   .txt-1:hover {
     text-decoration: underline;
   }
-  
-  
