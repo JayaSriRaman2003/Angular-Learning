@@ -34,13 +34,4 @@ export class AlertComponent implements OnInit {
       clearTimeout(this.timeoutId);
     }
   }
-
-  getIcon(type: string): string {
-    switch(type) {
-      case 'success': return '✅';
-      case 'error': return '❌';
-      case 'info': return 'ℹ️';
-      default: return '';
-    }
-  }
 }

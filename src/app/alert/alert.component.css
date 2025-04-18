@@ -1,7 +1,6 @@
 .alert {
   display: flex;
   align-items: center;
-  gap: 12px;
   padding: 16px 24px;
   margin: 20px auto;
   max-width: 600px;
@@ -15,7 +14,6 @@
   z-index: 10000;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   animation: slideFade 0.4s ease-out;
-  transition: all 0.3s ease;
 }
 
 .alert-icon {
@@ -33,7 +31,6 @@
   cursor: pointer;
   color: inherit;
   margin-left: 10px;
-  transition: transform 0.2s;
 }
 
 .close-btn:hover {

@@ -1,5 +1,4 @@
 <div *ngIf="message" class="alert" [ngClass]="type">
-  <span class="alert-icon">{{ getIcon(type) }}</span>
   <span class="alert-text">{{ message }}</span>
   <button class="close-btn" (click)="dismiss()">×</button>
 </div>

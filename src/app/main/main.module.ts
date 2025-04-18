@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { NotificationComponent } from './notification/notification.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
+import { SettingsComponent } from './settings/settings.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { BookmarkComponent } from './bookmark/bookmark.component';
     MessageComponent,
     ProfileComponent,
     NotificationComponent,
-    BookmarkComponent
+    BookmarkComponent,
+    SettingsComponent
   ],
   imports: [
     CommonModule,

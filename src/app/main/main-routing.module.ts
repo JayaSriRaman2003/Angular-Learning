@@ -6,6 +6,7 @@ import { MessageComponent } from './message/message.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NotificationComponent } from './notification/notification.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
+import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,7 @@ const routes: Routes = [
       { path: 'profile', component: ProfileComponent },
       { path: 'notification', component: NotificationComponent },
       { path: 'bookmark', component: BookmarkComponent },
+      { path: 'settings', component: SettingsComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full' }
     ]
   }

@@ -1,0 +1,91 @@
+.settings-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f5f8fa;
+    border-radius: 16px;
+  }
+  
+  .settings-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1da1f2;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .settings-section {
+    margin-bottom: 25px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .setting-item {
+    margin-bottom: 15px;
+  }
+  
+  .setting-item label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+  }
+  
+  .setting-item input,
+  .setting-item select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .setting-item input:focus,
+  .setting-item select:focus {
+    border-color: #1da1f2;
+    outline: none;
+  }
+  
+  .setting-item input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .checkbox-label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .settings-action {
+    text-align: center;
+  }
+  
+  .save-btn {
+    padding: 12px 24px;
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .save-btn:hover {
+    box-shadow: 0 0 10px rgba(29, 161, 242, 0.4);
+  }
+  
+  @media (max-width: 768px) {
+    .settings-container {
+      padding: 20px;
+    }
+  }
+  
