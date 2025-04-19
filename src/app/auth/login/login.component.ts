@@ -35,7 +35,7 @@ export class LoginComponent {
       }, 1200);
     } else {
       // this.alertService.showAlert('Invalid email or password!', 'error');
-      alert("'Invalid email or password!")
+      alert("Invalid email or password!")
     }
   }
 }
