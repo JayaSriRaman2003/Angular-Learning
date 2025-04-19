@@ -51,7 +51,6 @@ export class AuthService {
 
     if (userIndex === -1) return false;
 
-    // 🔐 Hash new password
     const hashedNewPass = CryptoJS.SHA256(newPass).toString();
     users[userIndex].password = hashedNewPass;
     users[userIndex].confirmPassword = hashedNewPass;

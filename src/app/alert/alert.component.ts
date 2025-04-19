@@ -12,7 +12,7 @@ export class AlertComponent implements OnInit {
 
   constructor(private alertService: AlertService) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.alertService.alert$.subscribe((alert) => {
       this.message = alert.message;
       this.type = alert.type;

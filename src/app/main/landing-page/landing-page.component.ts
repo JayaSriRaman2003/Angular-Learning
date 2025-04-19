@@ -21,7 +21,8 @@ export class LandingPageComponent {
 
   onSubmit() {
     if(this.userForm.invalid){
-      this.alertService.showAlert("Enter All The Fields", "error");
+      // this.alertService.showAlert("Enter All The Fields", "error");
+      alert("Enter All The Fields")
     }
     if (this.userForm.valid) {
       this.tweetData = this.userForm.value;

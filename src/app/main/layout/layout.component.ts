@@ -14,7 +14,8 @@ export class LayoutComponent {
 
     logout() {
       this.authService.logout();
-      this.alert.showAlert("Logout Successful!", "info")
+      // this.alert.showAlert("Logout Successful!", "info")
+      alert("Logout Successful!")
       this.router.navigate(['/auth/login']);
     }
 
