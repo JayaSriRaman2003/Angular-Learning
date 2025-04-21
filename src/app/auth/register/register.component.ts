@@ -21,8 +21,8 @@ export class RegisterComponent {
   onSubmit() {
 
     if (!this.user.email || !this.user.password || !this.user.confirmPassword) {
-      // this.alertService.showAlert('Enter All The Fields', 'error')
-      alert('Enter All The Fields');
+      this.alertService.showAlert('Enter All The Fields', 'error')
+      // alert('Enter All The Fields');
 
       
       return;
@@ -30,25 +30,25 @@ export class RegisterComponent {
 
 
     if (!this.user.password || this.user.password.length < 6) {
-      // this.alertService.showAlert('Password must be at least 6 characters long.', 'error')
-      alert('Password must be at least 6 characters long.');
+      this.alertService.showAlert('Password must be at least 6 characters long.', 'error')
+      // alert('Password must be at least 6 characters long.');
       return;
     }
 
     if (this.user.password !== this.user.confirmPassword) {
-      // this.alertService.showAlert('Passwords do not match!', 'error')
-      alert('Passwords do not match!');
+      this.alertService.showAlert('Passwords do not match!', 'error')
+      // alert('Passwords do not match!');
       return;
     }
 
     const isRegistered = this.authService.registerUser(this.user);
     if (isRegistered) {
-      // this.alertService.showAlert('Registration successful!', 'success')
-      alert('Registration successful!');
+      this.alertService.showAlert('Registration successful!', 'success')
+      // alert('Registration successful!');
       this.router.navigate(['/login']);
     } else {
-      // this.alertService.showAlert('Email already exists!', 'info')
-      alert('Email already exists!');
+      this.alertService.showAlert('Email already exists!', 'info')
+      // alert('Email already exists!');
     }
   }
 }

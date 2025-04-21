@@ -16,27 +16,27 @@ export class ForgetPassComponent {
  
    onForget() {
      if (!this.email || !this.newPassword) {
-      //  this.alertService.showAlert('Enter All The Fields', 'error')
-       alert('Enter all the fields');
+       this.alertService.showAlert('Enter All The Fields', 'error')
+      //  alert('Enter all the fields');
        console.log(this.email);
        return;
      }
 
      if (this.newPassword.length < 6) {
-      //  this.alertService.showAlert('Password must be at least 6 characters long.', 'error')
-       alert('Password must be at least 6 characters long.');
+       this.alertService.showAlert('Password must be at least 6 characters long.', 'error')
+      //  alert('Password must be at least 6 characters long.');
        return;
      }
      
  
      const success = this.authService.forgetUser(this.email, this.newPassword);
      if (success) {
-      //  this.alertService.showAlert('Password Changed successful!', 'success')
-       alert('Password Changed successful!');
+       this.alertService.showAlert('Password Changed successful!', 'success')
+      //  alert('Password Changed successful!');
        this.router.navigate(['/login']);
      } else {
-      //  this.alertService.showAlert('Invalid email or password!', 'info')
-       alert('Invalid email or password!');
+       this.alertService.showAlert('Invalid email or password!', 'info')
+      //  alert('Invalid email or password!');
      }
    }
 }

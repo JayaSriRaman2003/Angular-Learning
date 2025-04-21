@@ -20,22 +20,22 @@ export class LoginComponent {
 
   onLogin() {
     if (!this.email || !this.password) {
-      // this.alertService.showAlert('Please enter email and password.', 'error');
-      alert('Please enter email and password.')
+      this.alertService.showAlert('Please enter email and password.', 'error');
+      // alert('Please enter email and password.')
       return;
     }
 
     const success = this.authService.loginUser(this.email, this.password);
 
     if (success) {
-      // this.alertService.showAlert('Login successful!', 'success');
-      alert('Login successful!')
+      this.alertService.showAlert('Login successful!', 'success');
+      // alert('Login successful!')
       setTimeout(() => {
         this.router.navigate(['/main/home']);
       }, 1200);
     } else {
-      // this.alertService.showAlert('Invalid email or password!', 'error');
-      alert("Invalid email or password!")
+      this.alertService.showAlert('Invalid email or password!', 'error');
+      // alert("Invalid email or password!")
     }
   }
 }
